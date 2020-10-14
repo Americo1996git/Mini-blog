@@ -25,7 +25,7 @@ SECRET_KEY = '@+@np*tld61+dv-yq_=kcu+*01f##z0)ccl!hakzep!7x%l6d$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]
+ALLOWED_HOSTS = ['127.0.0.1','daniel1996.pythonanywhere.com',]
 
 
 # Application definition
@@ -124,3 +124,4 @@ USE_TZ = True
 STATIC_URL = '/static/' #este codigo me dice en donde estan los archivos estaticos en este caso en la carpet static
 STATIC_ROOT = os.path.join(BASE_DIR,'static') #este codigo nos va a servir cuando subamos nuestro proyecto al servidor
 X_FRAME_OPTIONS='SAMEORIGIN' # only if django version >= 3.0, evita un tipo de ataque para que en los frames del html acepten solo frames de mi propio server
+LOGIN_REDIRECT_URL = '/'
